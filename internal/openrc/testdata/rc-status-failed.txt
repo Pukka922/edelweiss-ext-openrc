@@ -1,0 +1,11 @@
+Runlevel: sysinit
+Runlevel: shutdown
+Runlevel: boot
+Runlevel: nonetwork
+Runlevel: default
+Runlevel: captest
+ t-daemon                                                          [  started  ]
+ t-fail                                                            [  stopped  ]
+Dynamic Runlevel: hotplugged
+Dynamic Runlevel: needed/wanted
+Dynamic Runlevel: manual

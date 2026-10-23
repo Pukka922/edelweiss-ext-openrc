@@ -1,0 +1,8 @@
+Oct 20 07:46:19 a73377ff9ea9 syslog.info syslogd started: BusyBox v1.37.0
+Oct 20 07:46:19 a73377ff9ea9 daemon.info supervise-daemon[185]: Supervisor command line: supervise-daemon t-super --start --respawn-delay 2 --respawn-max 5 --respawn-period 1800 /bin/sleep -- 100000
+Oct 20 07:46:19 a73377ff9ea9 daemon.info supervise-daemon[187]: Child command line: /bin/sleep 100000
+Oct 20 07:46:19 a73377ff9ea9 user.notice t-daemon: hello from t-daemon
+Oct 20 07:46:19 a73377ff9ea9 daemon.err t-fail: an error of t-fail
+Oct 20 07:46:19 a73377ff9ea9 user.notice root: no tag
+Oct 20 07:46:19 a73377ff9ea9 daemon.err t-fail[319]: boom: port 80 in use
+Oct 20 07:46:19 a73377ff9ea9 daemon.err t-fail[302]: ERROR: t-fail failed to start

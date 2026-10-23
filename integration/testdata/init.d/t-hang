@@ -1,0 +1,9 @@
+#!/sbin/openrc-run
+description="Test service whose start hangs"
+
+start() {
+	ebegin "Starting t-hang, which never comes up"
+	# a helper that hangs and ignores SIGTERM: only SIGKILL ends it
+	sh -c 'trap "" TERM; exec sleep 86400'
+	eend $?
+}

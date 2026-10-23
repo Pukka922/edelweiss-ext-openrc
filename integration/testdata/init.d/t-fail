@@ -1,0 +1,7 @@
+#!/sbin/openrc-run
+description="Test service whose start fails"
+
+start() {
+	eerror "boom: port 80 in use"
+	return 1
+}

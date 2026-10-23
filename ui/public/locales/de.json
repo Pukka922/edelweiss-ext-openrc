@@ -1,0 +1,201 @@
+{
+  "title": "Dienste",
+  "loading": "Wird geladen …",
+  "noOpenRC": "Auf diesem System läuft kein OpenRC.",
+  "adminHint": "Ohne Admin-Modus siehst du alles, aber Starten, Stoppen und Autostart fragen zuerst nach dem Admin-Passwort.",
+  "adminOnly": "Ändern können nur Administratoren.",
+  "search": "Dienst suchen …",
+  "empty": "Kein Dienst passt zum Filter.",
+  "subtitle": {
+    "services": "{{ n }} Dienste",
+    "servicesOne": "1 Dienst",
+    "running": "{{ n }} laufen",
+    "runningOne": "1 läuft",
+    "problems": "{{ n }} Probleme",
+    "problemsOne": "1 Problem"
+  },
+  "common": { "cancel": "Abbrechen", "close": "Schließen" },
+  "actions": {
+    "label": "Aktionen",
+    "reload": "Neu laden",
+    "logs": "Logs",
+    "start": "Starten",
+    "stop": "Stoppen",
+    "restart": "Neu starten",
+    "details": "Details"
+  },
+  "banner": {
+    "crashed": "{{ name }} ist abgestürzt",
+    "failed": "{{ name }} ließ sich nicht starten",
+    "failedAt": "{{ name }} ließ sich nicht starten ({{ ago }})"
+  },
+  "ago": {
+    "now": "gerade eben",
+    "minutes": "vor {{ n }} min",
+    "hours": "vor {{ n }} h",
+    "days": "vor {{ n }} Tagen",
+    "daysOne": "vor 1 Tag"
+  },
+  "filters": {
+    "label": "Filter",
+    "all": "Alle",
+    "running": "Laufend",
+    "stopped": "Gestoppt",
+    "autostart": "Im Autostart"
+  },
+  "columns": { "service": "Dienst", "status": "Status", "autostart": "Autostart" },
+  "classes": {
+    "edelweiss": "diese Oberfläche",
+    "base": "Systembasis",
+    "remote": "Fernzugang",
+    "network": "Netzwerk",
+    "firewall": "Firewall",
+    "storage": "Datenträger"
+  },
+  "state": {
+    "started": "läuft",
+    "oneShot": "gestartet (einmalig)",
+    "stopped": "gestoppt",
+    "autostartIdle": "im Autostart, läuft nicht",
+    "crashed": "abgestürzt",
+    "failed": "Start fehlgeschlagen",
+    "starting": "startet …",
+    "stopping": "stoppt …",
+    "inactive": "inaktiv"
+  },
+  "row": {
+    "supervised": "überwacht (startet nach Absturz neu)",
+    "autostart": "Autostart",
+    "autostartOff": "aus",
+    "turnOn": "Autostart einschalten",
+    "turnOff": "Autostart ausschalten",
+    "noJoin": "kann nicht in den Autostart",
+    "noLeave": "kann nicht aus dem Autostart",
+    "working": "Änderung läuft …"
+  },
+  "system": {
+    "show": "Systemdienste anzeigen",
+    "hint": "Systemdienste sind die Dienste aus sysinit und shutdown (devfs, mdev, killprocs …)."
+  },
+  "details": {
+    "title": "Details: {{ name }}",
+    "description": "Beschreibung",
+    "status": "Status",
+    "supervised": "Überwacht",
+    "autostart": "Autostart",
+    "needs": "Braucht",
+    "uses": "Nutzt",
+    "after": "Startet nach",
+    "neededBy": "Gebraucht von",
+    "script": "Skript",
+    "supervisedYes": "ja (supervise-daemon, startet nach Absturz neu)",
+    "supervisedNo": "nein",
+    "uptime": "Laufzeit {{ uptime }}",
+    "pid": "PID {{ pid }}"
+  },
+  "job": {
+    "step": "Schritt {{ n }}/{{ m }}: {{ label }}",
+    "running": "Läuft: {{ kind }} {{ target }}",
+    "interrupted": "Unterbrochen: {{ kind }} {{ target }} bei Schritt {{ n }}/{{ m }} ({{ label }}). Prüfe den Zustand des Dienstes, bevor du weitermachst.",
+    "unknown": "Status unbekannt – lade neu"
+  },
+  "steps": {
+    "start": "Dienst starten",
+    "stop": "Dienst stoppen",
+    "restart": "Dienst neu starten",
+    "enable": "in den Autostart nehmen",
+    "disable": "aus dem Autostart nehmen",
+    "lbu": "Änderungen sichern (lbu commit)"
+  },
+  "jobs": {
+    "failed": "Schritt {{ n }}/{{ m }} ({{ label }}) ist fehlgeschlagen: {{ error }}",
+    "interrupted": "Der Vorgang wurde bei Schritt {{ n }}/{{ m }} ({{ label }}) unterbrochen. Prüfe den Zustand des Dienstes, bevor du weitermachst."
+  },
+  "kinds": {
+    "start": "Starten",
+    "stop": "Stoppen",
+    "restart": "Neu starten",
+    "enable": "Autostart einschalten",
+    "disable": "Autostart ausschalten"
+  },
+  "dialog": { "ack": "Ich weiß, was ich tue", "viewLog": "Log ansehen" },
+  "action": {
+    "title": {
+      "start": "{{ name }} starten?",
+      "stop": "{{ name }} stoppen?",
+      "restart": "{{ name }} neu starten?"
+    },
+    "text": {
+      "start": "{{ name }} wird gestartet.",
+      "stop": "{{ name }} wird gestoppt.",
+      "restart": "{{ name }} wird neu gestartet."
+    },
+    "along": "Dabei werden auch gestoppt: {{ names }}",
+    "alongUnknown": "Welche Dienste dabei mitgestoppt werden, ließ sich nicht lesen.",
+    "failed": {
+      "start": "{{ name }} ließ sich nicht starten",
+      "stop": "{{ name }} ließ sich nicht stoppen",
+      "restart": "{{ name }} ließ sich nicht neu starten"
+    }
+  },
+  "warn": {
+    "remote": "{{ name }} ist dein Fernzugang. Ohne {{ name }} kommst du nicht mehr per SSH auf {{ host }}. Die Web-Oberfläche bleibt erreichbar.",
+    "network": "Das betrifft das Netzwerk – damit auch diese Oberfläche.",
+    "firewall": "Neue Firewall-Regeln können dich aussperren.",
+    "storage": "Dateisysteme werden ausgehängt, RAIDs angehalten."
+  },
+  "done": {
+    "start": "{{ name }} wurde gestartet.",
+    "stop": "{{ name }} wurde gestoppt.",
+    "restart": "{{ name }} wurde neu gestartet.",
+    "enable": "Der Autostart von {{ name }} ist eingeschaltet.",
+    "disable": "Der Autostart von {{ name }} ist ausgeschaltet."
+  },
+  "autostart": {
+    "title": "Autostart: {{ name }}",
+    "runlevel": "Runlevel",
+    "level": { "default": "default (normal)", "boot": "boot (früh beim Start)" },
+    "noteOn": "Fast alle Dienste gehören in default. Das Ändern startet oder stoppt den Dienst nicht sofort.",
+    "noteOff": "Das Ändern startet oder stoppt den Dienst nicht sofort.",
+    "textOff": "{{ name }} wird aus dem Autostart genommen ({{ levels }}).",
+    "apply": "Übernehmen",
+    "failed": "Der Autostart von {{ name }} ließ sich nicht ändern"
+  },
+  "restartEdelweiss": {
+    "callout": "Diesen Dienst kann die Oberfläche nicht stoppen – sie liefe sonst selbst nicht mehr.",
+    "note": "Die Seite ist ein paar Sekunden weg; danach musst du dich neu anmelden.",
+    "waiting": "edelweiss startet neu …"
+  },
+  "logs": {
+    "title": "Logs: {{ name }}",
+    "source": "Quelle",
+    "live": "live mitlesen",
+    "note": "Die letzten 500 Zeilen; „live mitlesen“ hängt neue Zeilen unten an. Wo ein Dienst kein eigenes Log hat, zeigt die Seite seine Zeilen aus dem System-Log.",
+    "empty": "Noch keine Zeilen.",
+    "none": "{{ name }} hat kein Log.",
+    "adminOnly": "Die Logs von {{ name }} kannst du nur im Admin-Modus lesen.",
+    "unreadable": "{{ source }} – im Admin-Modus",
+    "sources": {
+      "output": "Ausgabe-Log",
+      "error": "Fehler-Log",
+      "syslog": "Systemlog (nur {{ name }})"
+    }
+  },
+  "errors": {
+    "invalid_input": "Die Eingabe geht so nicht: {{ message }}",
+    "invalid_json": "Die Anfrage war nicht lesbar: {{ message }}",
+    "admin_required": "Dafür ist der Admin-Modus nötig.",
+    "not_found": "Den Dienst gibt es nicht mehr – lade neu.",
+    "failed": "Das ist fehlgeschlagen: {{ message }}",
+    "no_openrc": "Auf diesem System läuft kein OpenRC.",
+    "protected": "{{ service }} ist geschützt ({{ reason }}) und lässt sich so nicht ändern.",
+    "protectedNoReason": "{{ service }} ist geschützt und lässt sich so nicht ändern.",
+    "confirm_required": "Das braucht deine Bestätigung.",
+    "busy": "Gerade läuft schon eine andere Änderung – versuch es gleich noch einmal.",
+    "field": {
+      "changed": "Der Dienst hat sich inzwischen geändert. Lade die Liste neu und versuche es noch einmal.",
+      "service": "Diesen Dienst gibt es nicht.",
+      "offset": "Die Position im Log stimmt nicht. Öffne das Log neu."
+    }
+  }
+}

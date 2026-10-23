@@ -1,0 +1,5 @@
+#!/sbin/openrc-run
+description="Test daemon under supervise-daemon"
+supervisor=supervise-daemon
+command=/bin/sleep
+command_args=100000

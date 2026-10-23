@@ -1,0 +1,6 @@
+ * Test daemon that needs t-daemon
+ * healthcheck: no description
+ * unhealthy: no description
+ * restart: no description
+ * reload: no description
+ * cgroup_cleanup: Kill all processes in the cgroup

@@ -1,0 +1,16 @@
+Runlevel: sysinit
+Runlevel: shutdown
+Runlevel: boot
+ t-oneshot                                                         [  started  ]
+Runlevel: nonetwork
+Runlevel: default
+ t-daemon                                                          [  started  ]
+ t-fail                                                            [  stopped  ]
+Dynamic Runlevel: hotplugged
+Dynamic Runlevel: needed/wanted
+ t-daemon                                                          [  started  ]
+Dynamic Runlevel: manual
+ t-crash                                                           [  crashed  ]
+ t-log                                                             [  started  ]
+ t-super                                               [  started 00:00:02 (0) ]
+ t-needs                                                           [  started  ]

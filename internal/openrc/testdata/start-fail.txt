@@ -1,0 +1,4 @@
+exit status: 1
+mkdir: can't create directory '/sys/fs/cgroup/openrc.t-fail': Read-only file system
+ * boom: port 80 in use
+ * ERROR: t-fail failed to start

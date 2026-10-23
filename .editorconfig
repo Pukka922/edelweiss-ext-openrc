@@ -1,0 +1,22 @@
+root = true
+
+[*]
+charset = utf-8
+end_of_line = lf
+insert_final_newline = true
+trim_trailing_whitespace = true
+
+[*.go]
+indent_style = tab
+
+[*.{ts,tsx,js,json,css,md,yaml,yml,toml}]
+indent_style = space
+indent_size = 2
+
+[Makefile]
+indent_style = tab
+
+# The captured outputs of OpenRC are kept as they are: trailing spaces and missing final newlines belong to them.
+[internal/openrc/testdata/*]
+trim_trailing_whitespace = false
+insert_final_newline = false

@@ -1,0 +1,10 @@
+{
+  "id": "openrc",
+  "version": "0.0.0-dev",
+  "apiVersion": 1,
+  "name": { "de": "Dienste", "en": "Services" },
+  "description": { "de": "Dienste von Alpine Linux (OpenRC) starten, stoppen und überwachen", "en": "Start, stop and watch the services of Alpine Linux (OpenRC)" },
+  "menu": { "section": "system", "order": 40, "icon": "icon.svg" },
+  "ui": { "entry": "index.js", "styles": ["style.css"], "locales": "locales" },
+  "requiresAdmin": false
+}

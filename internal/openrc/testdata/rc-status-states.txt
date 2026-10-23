@@ -1,0 +1,11 @@
+Runlevel: sysinit
+Runlevel: shutdown
+Runlevel: boot
+Runlevel: nonetwork
+Runlevel: default
+Dynamic Runlevel: hotplugged
+Dynamic Runlevel: needed/wanted
+Dynamic Runlevel: manual
+ t-slow                                                            [ starting  ]
+ t-inactive                                                        [ inactive  ]
+ t-markfailed                                                         [ failed ]

@@ -1,0 +1,398 @@
+=== run-openrc ===
+/run/openrc
+/run/openrc/daemons
+/run/openrc/daemons/t-crash
+/run/openrc/daemons/t-crash/001
+/run/openrc/daemons/t-daemon
+/run/openrc/daemons/t-daemon/001
+/run/openrc/daemons/t-log
+/run/openrc/daemons/t-log/001
+/run/openrc/daemons/t-needs
+/run/openrc/daemons/t-needs/001
+/run/openrc/daemons/t-super
+/run/openrc/daemons/t-super/001
+/run/openrc/depconfig
+/run/openrc/deptree
+/run/openrc/exclusive
+/run/openrc/failed
+/run/openrc/hotplugged
+/run/openrc/inactive
+/run/openrc/options
+/run/openrc/options/t-crash
+/run/openrc/options/t-crash/command
+/run/openrc/options/t-crash/pidfile
+/run/openrc/options/t-daemon
+/run/openrc/options/t-daemon/command
+/run/openrc/options/t-daemon/pidfile
+/run/openrc/options/t-log
+/run/openrc/options/t-log/command
+/run/openrc/options/t-log/pidfile
+/run/openrc/options/t-needs
+/run/openrc/options/t-needs/command
+/run/openrc/options/t-needs/pidfile
+/run/openrc/options/t-super
+/run/openrc/options/t-super/argc
+/run/openrc/options/t-super/argv_0
+/run/openrc/options/t-super/argv_1
+/run/openrc/options/t-super/child_pid
+/run/openrc/options/t-super/exec
+/run/openrc/options/t-super/pidfile
+/run/openrc/options/t-super/respawn_delay
+/run/openrc/options/t-super/respawn_delay_cap
+/run/openrc/options/t-super/respawn_delay_step
+/run/openrc/options/t-super/respawn_max
+/run/openrc/options/t-super/respawn_period
+/run/openrc/options/t-super/start_count
+/run/openrc/options/t-super/start_time
+/run/openrc/scheduled
+/run/openrc/softlevel
+/run/openrc/started
+/run/openrc/started/t-crash
+/run/openrc/started/t-daemon
+/run/openrc/started/t-log
+/run/openrc/started/t-needs
+/run/openrc/started/t-oneshot
+/run/openrc/started/t-super
+/run/openrc/starting
+/run/openrc/stopping
+/run/openrc/supervise-t-super.ctl
+/run/openrc/wasinactive
+=== run-openrc-ls ===
+/run/openrc:
+total 52
+drwxr-xr-x    7 root     root          4096 Oct 20 07:46 daemons
+-rw-r--r--    1 root     root            11 Oct 20 07:46 depconfig
+-rw-r--r--    1 root     root          3485 Oct 20 07:46 deptree
+drwxr-xr-x    2 root     root          4096 Oct 20 07:46 exclusive
+drwxr-xr-x    2 root     root          4096 Oct 20 07:46 failed
+drwxr-xr-x    2 root     root          4096 Oct 20 07:46 hotplugged
+drwxr-xr-x    2 root     root          4096 Oct 20 07:46 inactive
+drwxr-xr-x    7 root     root          4096 Oct 20 07:46 options
+drwxr-xr-x    2 root     root          4096 Oct 20 07:46 scheduled
+-rw-r--r--    1 root     root             0 Oct 20 07:46 softlevel
+drwxr-xr-x    2 root     root          4096 Oct 20 07:46 started
+drwxr-xr-x    2 root     root          4096 Oct 20 07:46 starting
+drwxr-xr-x    2 root     root          4096 Oct 20 07:46 stopping
+prw-------    1 root     root             0 Oct 20 07:46 supervise-t-super.ctl
+drwxr-xr-x    2 root     root          4096 Oct 20 07:46 wasinactive
+
+/run/openrc/daemons:
+total 20
+drwxr-xr-x    2 root     root          4096 Oct 20 07:46 t-crash
+drwxr-xr-x    2 root     root          4096 Oct 20 07:46 t-daemon
+drwxr-xr-x    2 root     root          4096 Oct 20 07:46 t-log
+drwxr-xr-x    2 root     root          4096 Oct 20 07:46 t-needs
+drwxr-xr-x    2 root     root          4096 Oct 20 07:46 t-super
+
+/run/openrc/daemons/t-crash:
+total 4
+-rw-r--r--    1 root     root            73 Oct 20 07:46 001
+
+/run/openrc/daemons/t-daemon:
+total 4
+-rw-r--r--    1 root     root            74 Oct 20 07:46 001
+
+/run/openrc/daemons/t-log:
+total 4
+-rw-r--r--    1 root     root           105 Oct 20 07:46 001
+
+/run/openrc/daemons/t-needs:
+total 4
+-rw-r--r--    1 root     root            73 Oct 20 07:46 001
+
+/run/openrc/daemons/t-super:
+total 4
+-rw-r--r--    1 root     root            87 Oct 20 07:46 001
+
+/run/openrc/exclusive:
+total 0
+
+/run/openrc/failed:
+total 0
+
+/run/openrc/hotplugged:
+total 0
+
+/run/openrc/inactive:
+total 0
+
+/run/openrc/options:
+total 20
+drwxr-xr-x    2 root     root          4096 Oct 20 07:46 t-crash
+drwxr-xr-x    2 root     root          4096 Oct 20 07:46 t-daemon
+drwxr-xr-x    2 root     root          4096 Oct 20 07:46 t-log
+drwxr-xr-x    2 root     root          4096 Oct 20 07:46 t-needs
+drwxr-xr-x    2 root     root          4096 Oct 20 07:46 t-super
+
+/run/openrc/options/t-crash:
+total 8
+-rw-r--r--    1 root     root            10 Oct 20 07:46 command
+-rw-r--r--    1 root     root            16 Oct 20 07:46 pidfile
+
+/run/openrc/options/t-daemon:
+total 8
+-rw-r--r--    1 root     root            10 Oct 20 07:46 command
+-rw-r--r--    1 root     root            17 Oct 20 07:46 pidfile
+
+/run/openrc/options/t-log:
+total 8
+-rw-r--r--    1 root     root             7 Oct 20 07:46 command
+-rw-r--r--    1 root     root            14 Oct 20 07:46 pidfile
+
+/run/openrc/options/t-needs:
+total 8
+-rw-r--r--    1 root     root            10 Oct 20 07:46 command
+-rw-r--r--    1 root     root            16 Oct 20 07:46 pidfile
+
+/run/openrc/options/t-super:
+total 52
+-rw-r--r--    1 root     root             1 Oct 20 07:46 argc
+-rw-r--r--    1 root     root            10 Oct 20 07:46 argv_0
+-rw-r--r--    1 root     root             6 Oct 20 07:46 argv_1
+-rw-r--r--    1 root     root             3 Oct 20 07:46 child_pid
+-rw-r--r--    1 root     root            10 Oct 20 07:46 exec
+-rw-r--r--    1 root     root            30 Oct 20 07:46 pidfile
+-rw-r--r--    1 root     root             1 Oct 20 07:46 respawn_delay
+-rw-r--r--    1 root     root             5 Oct 20 07:46 respawn_delay_cap
+-rw-r--r--    1 root     root             3 Oct 20 07:46 respawn_delay_step
+-rw-r--r--    1 root     root             1 Oct 20 07:46 respawn_max
+-rw-r--r--    1 root     root             4 Oct 20 07:46 respawn_period
+-rw-r--r--    1 root     root             1 Oct 20 07:46 start_count
+-rw-r--r--    1 root     root            19 Oct 20 07:46 start_time
+
+/run/openrc/scheduled:
+total 0
+
+/run/openrc/started:
+total 0
+lrwxrwxrwx    1 root     root            19 Oct 20 07:46 t-crash -> /etc/init.d/t-crash
+lrwxrwxrwx    1 root     root            20 Oct 20 07:46 t-daemon -> /etc/init.d/t-daemon
+lrwxrwxrwx    1 root     root            17 Oct 20 07:46 t-log -> /etc/init.d/t-log
+lrwxrwxrwx    1 root     root            19 Oct 20 07:46 t-needs -> /etc/init.d/t-needs
+lrwxrwxrwx    1 root     root            21 Oct 20 07:46 t-oneshot -> /etc/init.d/t-oneshot
+lrwxrwxrwx    1 root     root            19 Oct 20 07:46 t-super -> /etc/init.d/t-super
+
+/run/openrc/starting:
+total 0
+
+/run/openrc/stopping:
+total 0
+
+/run/openrc/wasinactive:
+total 0
+=== file /run/openrc/daemons/t-crash/001 ===
+exec=/bin/sleep
+argv_0=/bin/sleep
+argv_1=100000
+pidfile=/run/t-crash.pid
+=== file /run/openrc/daemons/t-daemon/001 ===
+exec=/bin/sleep
+argv_0=/bin/sleep
+argv_1=100000
+pidfile=/run/t-daemon.pid
+=== file /run/openrc/daemons/t-log/001 ===
+exec=/bin/sh
+argv_0=/bin/sh
+argv_1=-c
+argv_2=while :; do echo tick; sleep 1; done
+pidfile=/run/t-log.pid
+=== file /run/openrc/daemons/t-needs/001 ===
+exec=/bin/sleep
+argv_0=/bin/sleep
+argv_1=100000
+pidfile=/run/t-needs.pid
+=== file /run/openrc/daemons/t-super/001 ===
+exec=/bin/sleep
+argv_0=/bin/sleep
+argv_1=100000
+pidfile=/var/run/supervise-t-super.pid
+=== file /run/openrc/depconfig ===
+/etc/fstab
+=== file /run/openrc/deptree ===
+depinfo_0_service='bootmisc'
+depinfo_0_ibefore_0='logger'
+depinfo_0_ibefore_1='local'
+depinfo_0_iafter_0='sysctl'
+depinfo_0_keyword_0='-prefix'
+depinfo_0_keyword_1='-timeout'
+depinfo_0_keyword_2='-wsl'
+depinfo_1_service='firstboot'
+depinfo_1_ibefore_0='local'
+depinfo_2_service='hwdrivers'
+depinfo_2_ineed_0='dev'
+depinfo_2_ibefore_0='checkfs'
+depinfo_2_ibefore_1='local'
+depinfo_2_iafter_0='modloop'
+depinfo_2_iafter_1='modules'
+depinfo_2_keyword_0='-vserver'
+depinfo_2_keyword_1='-lxc'
+depinfo_2_broken_0='dev'
+depinfo_3_service='killprocs'
+depinfo_3_keyword_0='-prefix'
+depinfo_3_ibefore_0='local'
+depinfo_4_service='local'
+depinfo_4_iafter_0='bootmisc'
+depinfo_4_iafter_1='firstboot'
+depinfo_4_iafter_2='hwdrivers'
+depinfo_4_iafter_3='killprocs'
+depinfo_4_iafter_4='loopback'
+depinfo_4_iafter_5='machine-id'
+depinfo_4_iafter_6='modloop'
+depinfo_4_iafter_7='modules'
+depinfo_4_iafter_8='mtab'
+depinfo_4_iafter_9='osclock'
+depinfo_4_iafter_10='runsvdir'
+depinfo_4_iafter_11='s6-svscan'
+depinfo_4_iafter_12='savecache'
+depinfo_4_iafter_13='staticroute'
+depinfo_4_iafter_14='sysctl'
+depinfo_4_iafter_15='sysfsconf'
+depinfo_4_iafter_16='t-crash'
+depinfo_4_iafter_17='t-daemon'
+depinfo_4_iafter_18='t-fail'
+depinfo_4_iafter_19='t-log'
+depinfo_4_iafter_20='t-needs'
+depinfo_4_iafter_21='t-oneshot'
+depinfo_4_iafter_22='t-super'
+depinfo_4_iafter_23='user'
+depinfo_4_keyword_0='-timeout'
+depinfo_5_service='loopback'
+depinfo_5_keyword_0='-jail'
+depinfo_5_keyword_1='-prefix'
+depinfo_5_keyword_2='-systemd-nspawn'
+depinfo_5_keyword_3='-vserver'
+depinfo_5_ibefore_0='local'
+depinfo_6_service='machine-id'
+depinfo_6_ineed_0='dev'
+depinfo_6_ibefore_0='local'
+depinfo_6_broken_0='dev'
+depinfo_7_service='modloop'
+depinfo_7_ibefore_0='checkfs'
+depinfo_7_ibefore_1='hwdrivers'
+depinfo_7_ibefore_2='modules'
+depinfo_7_ibefore_3='dev'
+depinfo_7_ibefore_4='local'
+depinfo_7_keyword_0='-vserver'
+depinfo_7_keyword_1='-lxc'
+depinfo_8_service='modules'
+depinfo_8_ibefore_0='hwdrivers'
+depinfo_8_ibefore_1='local'
+depinfo_8_keyword_0='-openvz'
+depinfo_8_keyword_1='-prefix'
+depinfo_8_keyword_2='-vserver'
+depinfo_8_keyword_3='-lxc'
+depinfo_8_iafter_0='modloop'
+depinfo_9_service='mtab'
+depinfo_9_keyword_0='-prefix'
+depinfo_9_keyword_1='-systemd-nspawn'
+depinfo_9_ibefore_0='local'
+depinfo_10_service='osclock'
+depinfo_10_ibefore_0='local'
+depinfo_11_service='runsvdir'
+depinfo_11_ibefore_0='local'
+depinfo_12_service='s6-svscan'
+depinfo_12_ibefore_0='local'
+depinfo_13_service='savecache'
+depinfo_13_ibefore_0='local'
+depinfo_14_service='staticroute'
+depinfo_14_iuse_0='network'
+depinfo_14_keyword_0='-jail'
+depinfo_14_keyword_1='-prefix'
+depinfo_14_keyword_2='-vserver'
+depinfo_14_ibefore_0='local'
+depinfo_15_service='sysctl'
+depinfo_15_ibefore_0='bootmisc'
+depinfo_15_ibefore_1='logger'
+depinfo_15_ibefore_2='local'
+depinfo_15_keyword_0='-prefix'
+depinfo_15_keyword_1='-systemd-nspawn'
+depinfo_15_keyword_2='-vserver'
+depinfo_16_service='sysfsconf'
+depinfo_16_ibefore_0='local'
+depinfo_17_service='t-crash'
+depinfo_17_ibefore_0='local'
+depinfo_18_service='t-daemon'
+depinfo_18_ibefore_0='local'
+depinfo_18_needsme_0='t-needs'
+depinfo_19_service='t-fail'
+depinfo_19_ibefore_0='local'
+depinfo_20_service='t-log'
+depinfo_20_ibefore_0='local'
+depinfo_21_service='t-needs'
+depinfo_21_ineed_0='t-daemon'
+depinfo_21_ibefore_0='local'
+depinfo_22_service='t-oneshot'
+depinfo_22_ibefore_0='local'
+depinfo_23_service='t-super'
+depinfo_23_ibefore_0='local'
+depinfo_24_service='user'
+depinfo_24_ibefore_0='local'
+=== file /run/openrc/options/t-crash/command ===
+/bin/sleep
+=== file /run/openrc/options/t-crash/pidfile ===
+/run/t-crash.pid
+=== file /run/openrc/options/t-daemon/command ===
+/bin/sleep
+=== file /run/openrc/options/t-daemon/pidfile ===
+/run/t-daemon.pid
+=== file /run/openrc/options/t-log/command ===
+/bin/sh
+=== file /run/openrc/options/t-log/pidfile ===
+/run/t-log.pid
+=== file /run/openrc/options/t-needs/command ===
+/bin/sleep
+=== file /run/openrc/options/t-needs/pidfile ===
+/run/t-needs.pid
+=== file /run/openrc/options/t-super/argc ===
+2
+=== file /run/openrc/options/t-super/argv_0 ===
+/bin/sleep
+=== file /run/openrc/options/t-super/argv_1 ===
+100000
+=== file /run/openrc/options/t-super/child_pid ===
+187
+=== file /run/openrc/options/t-super/exec ===
+/bin/sleep
+=== file /run/openrc/options/t-super/pidfile ===
+/var/run/supervise-t-super.pid
+=== file /run/openrc/options/t-super/respawn_delay ===
+2
+=== file /run/openrc/options/t-super/respawn_delay_cap ===
+30000
+=== file /run/openrc/options/t-super/respawn_delay_step ===
+128
+=== file /run/openrc/options/t-super/respawn_max ===
+5
+=== file /run/openrc/options/t-super/respawn_period ===
+1800
+=== file /run/openrc/options/t-super/start_count ===
+0
+=== file /run/openrc/options/t-super/start_time ===
+2026-10-20 07:46:19
+=== file /run/openrc/softlevel ===
+=== etc-runlevels ===
+/etc/runlevels:
+total 20
+drwxr-xr-x    2 root     root          4096 Oct 20 07:46 boot
+drwxr-xr-x    2 root     root          4096 Oct 20 07:46 default
+drwxr-xr-x    2 root     root          4096 Oct 20 07:46 nonetwork
+drwxr-xr-x    2 root     root          4096 Oct 20 07:46 shutdown
+drwxr-xr-x    2 root     root          4096 Oct 20 07:46 sysinit
+
+/etc/runlevels/boot:
+total 0
+lrwxrwxrwx    1 root     root            21 Oct 20 07:46 t-oneshot -> /etc/init.d/t-oneshot
+
+/etc/runlevels/default:
+total 0
+lrwxrwxrwx    1 root     root            20 Oct 20 07:46 t-daemon -> /etc/init.d/t-daemon
+lrwxrwxrwx    1 root     root            18 Oct 20 07:46 t-fail -> /etc/init.d/t-fail
+
+/etc/runlevels/nonetwork:
+total 0
+
+/etc/runlevels/shutdown:
+total 0
+
+/etc/runlevels/sysinit:
+total 0

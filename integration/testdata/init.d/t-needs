@@ -1,0 +1,10 @@
+#!/sbin/openrc-run
+description="Test daemon that needs t-daemon"
+command=/bin/sleep
+command_args=100000
+command_background=true
+pidfile=/run/t-needs.pid
+
+depend() {
+	need t-daemon
+}

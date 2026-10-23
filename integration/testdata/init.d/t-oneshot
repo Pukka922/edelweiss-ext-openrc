@@ -1,0 +1,7 @@
+#!/sbin/openrc-run
+description="Test one-shot service without a daemon"
+
+start() {
+	ebegin "one shot"
+	eend 0
+}

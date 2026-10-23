@@ -1,0 +1,201 @@
+{
+  "title": "Services",
+  "loading": "Loading …",
+  "noOpenRC": "OpenRC is not running on this system.",
+  "adminHint": "Without admin mode you can see everything, but starting, stopping and the autostart ask for the admin password first.",
+  "adminOnly": "Only administrators can change anything here.",
+  "search": "Search services …",
+  "empty": "No service matches.",
+  "subtitle": {
+    "services": "{{ n }} services",
+    "servicesOne": "1 service",
+    "running": "{{ n }} running",
+    "runningOne": "1 running",
+    "problems": "{{ n }} problems",
+    "problemsOne": "1 problem"
+  },
+  "common": { "cancel": "Cancel", "close": "Close" },
+  "actions": {
+    "label": "Actions",
+    "reload": "Reload",
+    "logs": "Logs",
+    "start": "Start",
+    "stop": "Stop",
+    "restart": "Restart",
+    "details": "Details"
+  },
+  "banner": {
+    "crashed": "{{ name }} has crashed",
+    "failed": "{{ name }} could not be started",
+    "failedAt": "{{ name }} could not be started ({{ ago }})"
+  },
+  "ago": {
+    "now": "just now",
+    "minutes": "{{ n }} min ago",
+    "hours": "{{ n }} h ago",
+    "days": "{{ n }} days ago",
+    "daysOne": "1 day ago"
+  },
+  "filters": {
+    "label": "Filter",
+    "all": "All",
+    "running": "Running",
+    "stopped": "Stopped",
+    "autostart": "In the autostart"
+  },
+  "columns": { "service": "Service", "status": "Status", "autostart": "Autostart" },
+  "classes": {
+    "edelweiss": "this interface",
+    "base": "system base",
+    "remote": "remote access",
+    "network": "network",
+    "firewall": "firewall",
+    "storage": "storage"
+  },
+  "state": {
+    "started": "running",
+    "oneShot": "started (one-shot)",
+    "stopped": "stopped",
+    "autostartIdle": "in the autostart, not running",
+    "crashed": "crashed",
+    "failed": "start failed",
+    "starting": "starting …",
+    "stopping": "stopping …",
+    "inactive": "inactive"
+  },
+  "row": {
+    "supervised": "supervised (restarts after a crash)",
+    "autostart": "Autostart",
+    "autostartOff": "off",
+    "turnOn": "Turn the autostart on",
+    "turnOff": "Turn the autostart off",
+    "noJoin": "cannot be put into the autostart",
+    "noLeave": "cannot be taken out of the autostart",
+    "working": "Change in progress …"
+  },
+  "system": {
+    "show": "Show system services",
+    "hint": "System services are those of sysinit and shutdown (devfs, mdev, killprocs …)."
+  },
+  "details": {
+    "title": "Details: {{ name }}",
+    "description": "Description",
+    "status": "Status",
+    "supervised": "Supervised",
+    "autostart": "Autostart",
+    "needs": "Needs",
+    "uses": "Uses",
+    "after": "Starts after",
+    "neededBy": "Needed by",
+    "script": "Script",
+    "supervisedYes": "yes (supervise-daemon, restarts after a crash)",
+    "supervisedNo": "no",
+    "uptime": "uptime {{ uptime }}",
+    "pid": "PID {{ pid }}"
+  },
+  "job": {
+    "step": "Step {{ n }}/{{ m }}: {{ label }}",
+    "running": "Running: {{ kind }} {{ target }}",
+    "interrupted": "Interrupted: {{ kind }} {{ target }} at step {{ n }}/{{ m }} ({{ label }}). Check the service before you go on.",
+    "unknown": "Status unknown – reload"
+  },
+  "steps": {
+    "start": "start the service",
+    "stop": "stop the service",
+    "restart": "restart the service",
+    "enable": "add it to the autostart",
+    "disable": "remove it from the autostart",
+    "lbu": "save the changes (lbu commit)"
+  },
+  "jobs": {
+    "failed": "Step {{ n }}/{{ m }} ({{ label }}) failed: {{ error }}",
+    "interrupted": "The job was interrupted at step {{ n }}/{{ m }} ({{ label }}). Check the service before you go on."
+  },
+  "kinds": {
+    "start": "Start",
+    "stop": "Stop",
+    "restart": "Restart",
+    "enable": "Autostart on",
+    "disable": "Autostart off"
+  },
+  "dialog": { "ack": "I know what I am doing", "viewLog": "View log" },
+  "action": {
+    "title": {
+      "start": "Start {{ name }}?",
+      "stop": "Stop {{ name }}?",
+      "restart": "Restart {{ name }}?"
+    },
+    "text": {
+      "start": "{{ name }} will be started.",
+      "stop": "{{ name }} will be stopped.",
+      "restart": "{{ name }} will be restarted."
+    },
+    "along": "These stop along with it: {{ names }}",
+    "alongUnknown": "Which services stop along with it could not be read.",
+    "failed": {
+      "start": "{{ name }} could not be started",
+      "stop": "{{ name }} could not be stopped",
+      "restart": "{{ name }} could not be restarted"
+    }
+  },
+  "warn": {
+    "remote": "{{ name }} is your remote access. Without {{ name }} you can no longer reach {{ host }} over SSH. The web interface stays available.",
+    "network": "This affects the network – and with it this interface.",
+    "firewall": "New firewall rules can lock you out.",
+    "storage": "File systems are unmounted, RAID arrays are stopped."
+  },
+  "done": {
+    "start": "{{ name }} was started.",
+    "stop": "{{ name }} was stopped.",
+    "restart": "{{ name }} was restarted.",
+    "enable": "The autostart of {{ name }} is on.",
+    "disable": "The autostart of {{ name }} is off."
+  },
+  "autostart": {
+    "title": "Autostart: {{ name }}",
+    "runlevel": "Runlevel",
+    "level": { "default": "default (normal)", "boot": "boot (early at startup)" },
+    "noteOn": "Almost all services belong in default. Changing this does not start or stop the service right away.",
+    "noteOff": "Changing this does not start or stop the service right away.",
+    "textOff": "{{ name }} will be taken out of the autostart ({{ levels }}).",
+    "apply": "Apply",
+    "failed": "The autostart of {{ name }} could not be changed"
+  },
+  "restartEdelweiss": {
+    "callout": "The interface cannot stop this service: it would no longer run itself.",
+    "note": "The page is gone for a few seconds; after that you have to log in again.",
+    "waiting": "edelweiss is restarting …"
+  },
+  "logs": {
+    "title": "Logs: {{ name }}",
+    "source": "Source",
+    "live": "Follow live",
+    "note": "The last 500 lines; “follow live” adds new lines at the bottom. Where a service has no log of its own, the page shows its lines from the system log.",
+    "empty": "No lines yet.",
+    "none": "{{ name }} has no log.",
+    "adminOnly": "The logs of {{ name }} can only be read in admin mode.",
+    "unreadable": "{{ source }} – in admin mode",
+    "sources": {
+      "output": "Output log",
+      "error": "Error log",
+      "syslog": "System log ({{ name }} only)"
+    }
+  },
+  "errors": {
+    "invalid_input": "The input is not valid: {{ message }}",
+    "invalid_json": "The request could not be read: {{ message }}",
+    "admin_required": "This needs admin mode.",
+    "not_found": "The service is gone – reload.",
+    "failed": "That failed: {{ message }}",
+    "no_openrc": "OpenRC is not running on this system.",
+    "protected": "{{ service }} is protected ({{ reason }}) and cannot be changed that way.",
+    "protectedNoReason": "{{ service }} is protected and cannot be changed that way.",
+    "confirm_required": "This needs your confirmation.",
+    "busy": "Another change is running – try again in a moment.",
+    "field": {
+      "changed": "The service has changed in the meantime. Reload the list and try again.",
+      "service": "There is no such service.",
+      "offset": "The position in the log is not valid. Open the log again."
+    }
+  }
+}

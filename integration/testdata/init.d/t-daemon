@@ -1,0 +1,6 @@
+#!/sbin/openrc-run
+description="Test daemon: sleeps in the background"
+command=/bin/sleep
+command_args=100000
+command_background=true
+pidfile=/run/t-daemon.pid

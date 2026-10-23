@@ -1,0 +1,8 @@
+#!/sbin/openrc-run
+description="Test daemon that writes output_log and error_log"
+command=/bin/sh
+command_args="-c 'while :; do echo tick; sleep 1; done'"
+command_background=true
+pidfile=/run/t-log.pid
+output_log=/var/log/t-log.log
+error_log=/var/log/t-log.err
