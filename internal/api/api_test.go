@@ -375,7 +375,13 @@ func (w *logWriter) String() string {
 func TestBadName(t *testing.T) {
 	f := newHarness(t)
 	routes := []string{"", "/logs", "/logs/stream?offset=0"}
-	for _, name := range []string{"..", "%2e%2e", "%2E%2E", "..%2fetc", "%2e%2e%2fetc", "%252e%252e", "net%252eeth0",
+	// The path is cleaned before routing since Fiber 3.6 / fasthttp 1.75, so a ".." segment never reaches the handler.
+	for _, name := range []string{"..", "%2e%2e", "%2E%2E", ".%2e", "%2e."} {
+		for _, route := range routes {
+			f.send("GET", "/services/"+name+route, nil, plain).wantError(t, http.StatusNotFound, "not_found")
+		}
+	}
+	for _, name := range []string{"..%2fetc", "%2e%2e%2fetc", "%252e%252e", "net%252eeth0",
 		"a%20b", "sshd%0a", ".hidden", "-x", strings.Repeat("a", 65)} {
 		for _, route := range routes {
 			e := f.send("GET", "/services/"+name+route, nil, plain).wantError(t, http.StatusBadRequest, "invalid_input")

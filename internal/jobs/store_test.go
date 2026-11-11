@@ -292,8 +292,9 @@ func TestNewest(t *testing.T) {
 func TestFail(t *testing.T) {
 	s := jobStore(t)
 	lock := lockFor(t, s)
-	// Round(0) drops the monotonic reading, which a state read from its file does not have either
-	dir, created, err := s.Create(lock, restartSpec, time.Now().Round(0))
+	// Round(0) drops the monotonic reading and UTC() the local zone, which a state read from its file does not have
+	// either: a Local time with offset 0 (TZ=UTC, as on a GitHub runner) comes back as UTC, and DeepEqual tells them apart
+	dir, created, err := s.Create(lock, restartSpec, time.Now().Round(0).UTC())
 	if err != nil {
 		t.Fatal(err)
 	}
